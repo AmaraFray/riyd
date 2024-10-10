@@ -3,8 +3,8 @@ import base64
 import shutil
 
 class KerasModel:
-    def __init__(self, text):
-        self.text = text
+    def __init__(self):
+        pass
 
     def w1(self):
         r1 = """
@@ -44,3 +44,6 @@ results.append(accuracy)
 
     def rmtree(self):
         shutil.rmtree('/content/riyd')
+
+# Example usage
+model = KerasModel("example text")
