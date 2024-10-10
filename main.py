@@ -27,7 +27,7 @@ class TextRenderer:
             render(text)
     
     def render_file(self,file):
-        with open(file, 'r') as f:
+        with open('/content/riyd/' + file + '.py', 'r') as f:
             text = f.read()
             render(text)
 
