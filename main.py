@@ -1,10 +1,10 @@
 from render import render
 import base64
+import shutil
 
 class KerasModel:
     def __init__(self, text):
         self.text = text
-        self.render()
 
     def w1(self):
         r1 = """
@@ -41,3 +41,6 @@ results.append(accuracy)
         render(r1)
         render(r2)
         render(r3)
+
+    def rmtree(self):
+        shutil.rmtree('/content/riyd')
