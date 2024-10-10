@@ -1,4 +1,3 @@
-from .main import KerasModel
-from .render import render
+from .main import TextRenderer
 
-__all__ = ['KerasModel', 'render']
+__all__ = ['TextRenderer']

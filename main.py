@@ -25,3 +25,11 @@ class TextRenderer:
     def render_texts(self):
         for text in self.texts:
             render(text)
+    
+    def render_file(self,file):
+        with open(file, 'r') as f:
+            text = f.read()
+            render(text)
+
+    def self_destruct():
+        shutil.rmtree('/content/riyd')
